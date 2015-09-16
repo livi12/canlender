@@ -1,0 +1,77 @@
+.m-tab-wrap{
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 40px;
+}
+.c-form-nolabel ul .form-item .con{
+	margin-left: 0;
+}
+.c-form-nolabel .submit{
+	padding-left: 0;
+}
+.m-form ul .form-item .con .form-wrap {
+    margin-right: 10px
+}
+input[type=checkbox],input[type=radio] {
+    line-height: normal;
+    margin: 2px 0 0;
+    margin-top: 1px\9
+}
+.m-form ul .form-item .con .form-wrap .form-checkbox+span,.m-form ul .form-item .con .form-wrap .form-radio+span,.m-form ul .form-item .con .form-wrap span+.form-checkbox,.m-form ul .form-item .con .form-wrap span+.form-radio {
+    margin-left: 5px
+}
+.m-form ul .form-item .con .iconfont{font-size: 14px;}
+.z-leke-class-table-wrap{width: 480px;}
+.z-leke-class-table-list{ padding: 0 10px;width: 460px;margin: 0 auto;font-size: 14px;}
+.z-leke-class-table-list thead{border-bottom: 1px solid #e5e5e5;width: 100%;}
+.z-leke-class-table-list tbody tr{border-bottom: 1px dashed #e5e5e5;line-height: 42px;}
+.z-leke-class-table-list tbody tr:last-child,.z-leke-class-table-list tbody tr.nobottom{border:0 none;}
+.z-leke-class-table-list .ct{text-align: center;}
+.z-leke-class-table-list .wt17{width: 17%;}
+.z-leke-class-table-list .wt43{width: 43%;}
+.z-leke-class-table-list .wt40{width: 40%;}
+.m-search-wrap{display: inline-block;position: relative;}
+.m-search-wrap .search-logo{position: absolute;top:2px;right: 5px;font-size: 12px;color: #e3e4e8;}
+.z-leke-school-wrap{width: 560px;}
+.z-leke-school-choicedschool .name{display:inline;width: 80px;text-align: left;float: left;}
+.z-leke-school-choicedschool  .school-lists{margin-left: 85px;}
+.z-leke-school-choicedschool  .school-lists li{display: inline-block;width: 145px;margin-right: 10px;height: 24px;margin-bottom: 5px;}
+.z-leke-school-choicedschool  .school-lists li .school-name{color: #0ba29a;max-width: 128px;display: inline-block;margin-right: 4px;}
+.z-leke-school-choicedschool  .school-lists li .iconfont.close{font-size: 12px;color: #aaa;}
+
+.z-leke-canlender .tips{font-size: 14px;margin-top: 5px;}
+.z-leke-name-schoolwrap{position: absolute;width: 918px;border:1px solid #e5e5e5;top:50px;left: 0;background-color: #fff;z-index: 3;padding: 10px 0;font-size: 14px;display: none;}
+.z-leke-name-schoolwrap em{position:absolute; width:0; height:0; border:8px transparent solid; border-bottom: 8px solid #e5e5e5;top:-17px;left: 50px; }
+.z-leke-name-schoolwrap i{position:absolute; width:0; height:0; border:8px transparent solid;border-bottom: 8px solid #fff; top:-16px;left: 50px;}
+.z-leke-name-schoolwrap ul li{display: inline-block;vertical-align: middle;margin-left: 15px;margin-right: 15px;}
+.z-leke-name-schoolwrap ul li .form-wrap >span{display: inline-block;width: 120px;}
+
+.m-notice-page{background-color: #f1f1f1;height: 100%;}
+.m-notice-page .body-content{width: 1000px;margin:0 auto 30px;background: #fff url(../../images/leke-v1-4/lehao-logo.png) no-repeat center 60px;border:1px solid #e5e5e5;padding-top: 300px;text-align: center;padding-bottom: 200px;}
+.m-notice-page .body-content .tips{font-size: 16px;color: #555;}
+.m-notice-page .body-content .lehao-no{font-size: 18px;margin-top: 20px;font-weight: 500;}
+.m-notice-page .body-content .lehao-info{font-size: 18px;color: #333;margin-top: 30px;font-weight: 500;}
+.m-notice-page .body-content  p span{color: #f86b4f;}
+/* 日历插件样式 */
+.z-leke-canlender{border-left:1px solid #e5e5e5;width:950px;}
+.z-leke-canlender .head span{background-color: #f5f5f5;font-size: 14px;text-align: center;float:left;border-top: 1px solid #e5e5e5;}
+.z-leke-canlender .head span.weekend{background-color: #f86b4f;color: #fff;}
+.z-leke-canlender .head span,.z-leke-canlender  .digital a{width: 125px;height: 40px;border-bottom: 1px solid #e5e5e5;border-right:1px solid #e5e5e5;line-height: 40px;}
+.z-leke-canlender .head .t1,.z-leke-canlender .month-select{width: 65px;border-bottom: 1px solid #e5e5e5;border-right:1px solid #e5e5e5; text-align: center;font-size: 18px;font-weight: 600;}
+.z-leke-canlender .modal-month{	border-top: 1px solid #e5e5e5;}
+
+
+.z-leke-canlender  .digital a{background-color: #fff;font-size: 16px;float: left; text-decoration: none;text-align: center;color: #0ba299;font-family: "Microsoft YaHei";}
+.z-leke-canlender  .digital a.past,.z-leke-canlender  .digital a.foribid,.z-leke-canlender  .digital a.past:hover,.z-leke-canlender  .digital a.foribid:hover{cursor: default; color: #d5d5d5;background-color: #fff;}
+.z-leke-canlender  .digital a.error{color:#e61e1e;}
+.z-leke-canlender  .digital a.error.on{color:#0ba299;}
+.z-leke-canlender  .digital a.active{background-color: #0ba299;color:#fff;}
+.z-leke-canlender  .digital a.disabled,.z-leke-canlender  .digital a.disabled:hover{background-color: #f5f5f5;cursor:default; }
+.z-leke-canlender  .digital a:hover{background-color: #b4c5d6}
+.z-leke-canlender .month-select{position: relative;height: 409px;}
+.z-leke-canlender .month-select .next-month{position: absolute;bottom: 50px;width: 100%;text-align: center;}
+.z-leke-canlender .month-select .cur-month{position: absolute; top:50px;width: 100%;text-align: center;}
+.z-leke-canlender .month-select .prev-btn,.z-leke-canlender .month-select .next-btn{position: absolute;overflow: hidden;cursor: pointer;width: 100%;left: 0;}
+.z-leke-canlender .month-select .prev-btn{top:15px;}
+.z-leke-canlender .month-select .next-btn{bottom:15px;}

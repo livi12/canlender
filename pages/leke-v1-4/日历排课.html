@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历排课</title>
+	<link rel="stylesheet" type="text/css" href="http://static.leke.cn/styles/common/global.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/leke-v1-4/leke-v1-4.css">
+</head>
+<body>
+	<div class="m-tab-wrap">
+        <div class="m-tab">
+            <ul>
+               <li>单次排课</li>
+               <li>周期排课</li>
+               <li class="active">日历排课</li>
+           </ul>
+        </div>
+        <div class="m-form c-form-radio">
+            <form action="#" method="get">
+                <fieldset>
+                    <ul>
+                        <li class="form-item">
+                            <label for="" class="title"><span class="require">*</span> 授课老师：</label>
+                            <div class="con">
+                                <select name="" id="">
+                                    <option value="">请选择角色</option>
+                                </select>
+                                <span class=" f-ml10">当前课程没有老师可以选择，请先<a href="" class="s-c-turquoise f-vab">增加老师再进行排课</a></span>
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label for="" class="title"><span class="require">*</span> 上课时间：</label>
+                            <div class="con">
+                                <input type="text" placeholder="19:30" class="u-ipt u-ipt-nm s-b-red" value="">
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label for="" class="title"><span class="require">*</span> 课程时长：</label>
+                            <div class="con">
+                                <input type="text" value="" class="u-ipt u-ipt-nm s-b-red">
+                                <span class="f-ml10 f-mr25">课时</span>
+                                 <input type="text" value="" class="u-ipt u-ipt-nm s-b-red" >
+                                <span class="f-ml10 f-mr25">分钟/课时</span>
+                                <span class="f-ml20">共90分钟</span>
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label for="" class="title"><span class="require">*</span> 上课日期：</label>
+                            <div class="con">
+                                <p>已选择<span class="s-c-turquoise f-vab">9</span>天，共<span class="s-c-turquoise f-vab">18</span>节课。</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="z-leke-canlender">
+                        <div class="m-calendar" id="active_calendar">
+                            <div class="head f-clearfix">
+                                <span class="t1 year"></span>
+                                <span>一</span>
+                                <span>二</span>
+                                <span>三</span>
+                                <span>四</span>
+                                <span>五</span>
+                                <span class="weekend">六</span>
+                                <span class="weekend">日</span>
+                            </div>
+                            <div class="f-clearfix modal-month">
+                                <div class="month-select f-fl">
+                                    <div class="cur-month year-month"></div>
+                                    <div class="next-month year-month"></div>
+                                    <span class="prev-btn icon iconfont">&#xf016f;</span>
+                                    <span class="next-btn icon iconfont">&#xf0170;</span>
+                                </div>
+                                <div class="cur-digital digital f-clearfix"></div>
+                            </div>
+                        </div>
+                        <p class="tips">点击表格选择确认上课具体日期，再次点击取消选择。</p>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="保存" class="u-btn u-btn-nm u-btn-bg-turquoise">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../js/canlender.js"></script>
+    <script type="text/javascript">
+    var myDate = new Date();
+    var popCalendar1 = new PopCalendar({container:"active_calendar", curDate:[myDate.getFullYear(),myDate.getMonth()+1,myDate.getDate()] ,dataUrl:["2015-8-21","2015-9-1","2015-9-19","2015-11-26","2015-11-27","2015-9-4","2015-12-27","2016-1-4"]});
+    var arr=["2015-9-1","2015-9-6","2015-10-3","2015-10-16","2015-11-13","2015-11-26","2015-12-14","2015-11-23"];
+    //console.log(popCalendar1.paikeData());
+    popCalendar1.setForbiddenDate(arr);
+    //console.log(popCalendar1.paikeData());
+    var arr1=["2015-9-6","2015-10-16","2015-11-13","2015-12-14"];
+    popCalendar1.cancelForibidDate(arr1);
+    popCalendar1.errorDataShow(['2015-9-19','2015-11-27','2016-1-4'])
+    console.log(popCalendar1.paikeData());
+    </script>
+</body>
+</html>
