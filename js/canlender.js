@@ -139,7 +139,7 @@ PopCalendar.prototype = {
 			}
 			dayNum=70;
 		}
-		return {tmpStr,dayNum};
+		return obj={'tmpStr':tmpStr,'dayNum':dayNum};
 	},
 	/*获取当月所有排课的日期*/
 	curMonthData: function(arr,year,month){
